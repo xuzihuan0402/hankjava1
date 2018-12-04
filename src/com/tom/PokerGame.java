@@ -6,12 +6,22 @@ public class PokerGame {
 
 	public static void main(String[] args) {
 		
-		Random random = new Random();
-		int flowers[]={0x2663,0x2666,0x2665,0x2660};
-		for(int i = 0 ; i <3 ; i++){
-			
-			}
-			}
+		int[] n = new int [10];
+		System.out.println(n[4]);
+		
+		Card[] c = new Card[10];
+		c[0] = new Card(7);
+		System.out.println(c[0].get());
+		
+		Poker poker = new Poker();
+		poker.shuffle();
+		poker.print();
+		
+	}
+		
+		//Random random = new Random();
+		//char flowers[]={0x2663,0x2666,0x2665,0x2660};
+		
 		
 		/*
 		int nums[] = new int [5];
@@ -53,4 +63,4 @@ public class PokerGame {
 
 	}
 
-}
+
